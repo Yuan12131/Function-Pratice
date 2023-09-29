@@ -5,3 +5,8 @@ const add = sachick(3, 4, function(first, second){
   return first + second
 })
 console.log(add)
+
+const minus = sachick(3, 4, function(first, second){
+  return first - second
+})
+console.log(minus)
