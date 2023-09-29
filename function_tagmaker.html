@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+
+  </div>
+  <script>
+    root = document.getElementById("root")
+
+    function tagmaker (tagname){
+      if(typeof(tagname) === "string"){
+        return "<" + tagname + ">" + "Hello" + "</" + tagname + ">"
+      }
+    }
+
+    root.innerHTML = tagmaker("h1")
+    console.dir(root)
+  </script>
+</body>
+</html>
